@@ -1,0 +1,130 @@
+/* HEADER */
+
+.section__header{
+    margin: 200px 6%;
+}
+
+.header__circle{
+    position: relative;
+    z-index: 1;
+}
+
+.circle{
+    filter: drop-shadow(0px 3px 20px rgba(0, 0, 0, 0.16));
+    backdrop-filter: blur(30px);
+    --webkit-backdrop-filter: blur(30px);
+    background-color: var(--circleColor);
+    border-radius: 1150px;
+}
+
+.circle__one{
+    position: absolute;
+    top: -50px;
+    right: -140px;
+    width: 498px;
+    height: 498px;
+}
+
+.circle__two{
+    position: absolute;
+    top: 100px;
+    right: 140px;
+    width: 419px;
+    height: 419px;
+}
+
+.circle__three{
+    position: absolute;
+    top: 10px;
+    right: 370px;
+    width: 274px;
+    height: 274px;
+    background-color: var(--colorMain);
+}
+
+.header__content{
+    position: relative;
+    width: 50%;
+    z-index: 2;
+}
+
+.header__title{
+    font-weight: bold;
+    font-size: 90px;
+    line-height: 90px;
+    color: var(--colorMain);
+}
+
+.header__title span{
+    color: var(--colorDefault);
+}
+
+.header__description{
+    color: var(--colorText);
+    font-weight: normal;
+    padding-top: 34px;
+}
+
+.header__info{
+    padding-top: 80px;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    color: var(--colorMain);
+}
+
+.header__square{
+    width: 60px;
+    height: 60px;
+    background-color: var(--backgroundSecond);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 23px;
+}
+
+.header__arrow{
+    padding-top: 90px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: #4A4A4A;
+}
+
+.header__arrow__icon{
+    margin-right: 18px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .section__header{
+        margin: 150px 6%;
+    }
+
+    .header__circle{
+        opacity: 0.3;
+    }
+
+    .header__content{
+        width: 100%;
+    }
+
+    .header__title{
+        word-break: break-word;
+        font-size: 44px;
+        line-height: 40px;
+    }
+
+    .header__description{
+        font-size: 15px;
+    }
+
+    .header__info{
+        padding-top: 60px;
+    }
+
+    .header__square{
+        width: 50px;
+        height: 50px;
+        margin-right: 18px;
+    }
+}

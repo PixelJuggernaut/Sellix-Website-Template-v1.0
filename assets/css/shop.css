@@ -1,0 +1,137 @@
+/* SHOP */
+
+.section__shop{
+    width: 90%;
+    padding: 100px 5%;
+}
+
+.shop__title{
+    font-weight: bold;
+    font-size: 44px;
+    color: var(--colorMain);
+}
+
+.shop__description{
+    color: var(--colorText);
+    width: 40%;
+    font-weight: normal;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.shop__categories{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+.shop__category{
+    margin: 0 15px 15px 0;
+    background-color: var(--backgroundSecond);
+    color: var(--colorText);
+    font-weight: 500;
+    padding: 20px 70px;
+    cursor: pointer;
+}
+
+.shop__categories .active, .shop__category:hover{
+    color: var(--colorMain);
+}
+
+.shop__category:nth-child(1){
+    margin-left: 0px;
+}
+
+.shop__cards{
+    margin-top: 40px;
+}
+
+.shop__card{
+    background-color: var(--backgroundSecond);
+    padding: 13% 10%;
+    margin-bottom: 22px;
+}
+
+.shop__icon{
+    width: 57px;
+    max-width: 100%;
+}
+
+.shop__card__title{
+    color: var(--colorMain);
+    margin-top: 50px;
+}
+
+.shop__card__description{
+    color: var(--colorText);
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.shop__card__price{
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--colorText);
+}
+
+.shop__card__price span{
+    margin-left: 2px;
+    color: var(--colorDefault);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.shop__card__purchase{
+    margin-top: 40px;
+    background-color: var(--backgroundMain);
+    color: var(--colorMain);
+    font-weight: 600;
+    font-size: 14px;
+    padding: 20px 25px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.shop__card__purchase:hover{
+    opacity: 0.7;
+    transition: .3s;
+}
+
+.shop__card__icon{
+    margin-right: 17px;
+    width: 20px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .section__shop{
+        padding: 50px 5% 80px;
+    }
+
+    .shop__title{
+        font-size: 38px;
+    }
+
+    .shop__description{
+        width: 100%;
+        font-size: 14px;
+        padding-top: 5px;
+    }
+
+    .shop__card__purchase{
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .shop__category{
+        width: 100%;
+        text-align: center;
+        margin: 0 0 12px;
+    }
+}

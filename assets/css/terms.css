@@ -1,0 +1,37 @@
+/* TERMS */
+
+.section__terms{
+    background-color: var(--backgroundSecond);
+    padding: 6% 6%;
+}
+
+.terms__header{
+    color: var(--colorMain);
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.terms__header:nth-child(1){
+    margin-top: 0;
+}
+
+.terms__description{
+    width: 50%;
+    margin-bottom: 50px;
+    color: var(--colorText);
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.terms__paragraph{
+    margin-bottom: 30px;
+    color: var(--colorText);
+    font-weight: 400;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .terms__description{
+        width: 90%;
+    }
+}
